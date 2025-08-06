@@ -3,6 +3,13 @@ img{
   align-self: center;
 }
 
+.contactus-img-top {
+    display: block;
+    max-width: 60%;
+    height: auto;
+    margin: 20px auto;
+  }
+
 .card{
   border: rgb(103, 102, 105) 3px solid;
   display: flex;  
@@ -12,6 +19,16 @@ img{
   margin-top: 1%;
   margin-bottom: 1%;
 }
+
+.contactus{
+    
+    display: 800px;  
+    flex-direction: column;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
 
 .row{
   display: flex;  
