@@ -20,11 +20,16 @@ class CarModel(models.Model):
     car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)  # Many-to-One relationship
     name = models.CharField(max_length=100)
     CAR_TYPES = [
-        ('SEDAN', 'Sedan'),
-        ('SUV', 'SUV'),
-        ('WAGON', 'Wagon'),
-        # Add more choices as required
+    ('SEDAN', 'Sedan'),
+    ('SUV', 'SUV'),
+    ('WAGON', 'Wagon'),
+    ('VAN', 'Van'),
+    ('MUSCLE', 'Muscle'),
+    ('HYPER', 'Hyper'),
+    ('PICK-UP', 'Pick-up'),
+    ('COUPE', 'Coupe'),        
     ]
+
     type = models.CharField(max_length=10, choices=CAR_TYPES, default='SUV')
     year = models.IntegerField(default=2023,
         validators=[
